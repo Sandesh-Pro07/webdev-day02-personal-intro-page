@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sandesh Pal | B.Tech CSE Student</title>
+  <meta name="description" content="Sandesh Pal, first-year Computer Science Engineering student at Invertis University. Java, HTML, CSS and JavaScript.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Sandesh Pal, back to top">SP</a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#profiles">Profiles</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="topbar-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to light theme">◐</button>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">☰</button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hello">Hi, I’m</p>
+        <h1>Sandesh<br>Pal</h1>
+        <p class="role">First-year B.Tech CSE student at Invertis University, Bareilly. I build things with Java and the web stack, and I’m looking for internships and projects.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#contact">Get in touch</a>
+          <a class="btn btn-ghost" href="https://github.com/Sandesh-Pro07" target="_blank" rel="noopener">See my GitHub</a>
+        </div>
+      </div>
+
+      <figure class="code-card" aria-label="A Java class describing Sandesh">
+        <div class="code-head">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <figcaption>Sandesh.java</figcaption>
+        </div>
+        <pre><code id="typed" aria-live="off"></code><span class="caret" aria-hidden="true"></span></pre>
+        <noscript>
+          <pre><code>class Sandesh {
+  String course = "B.Tech CSE";
+  String college = "Invertis University";
+}</code></pre>
+        </noscript>
+      </figure>
+    </section>
+
+    <section class="section" id="about">
+      <h2>About me</h2>
+      <p class="lead">I’m a first-year Computer Science Engineering student with working knowledge of Java and core web technologies. My goal is to build practical skills, take on real projects, and grow as a developer.</p>
+    </section>
+
+    <section class="section" id="education">
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li>
+          <h3>B.Tech, Computer Science and Engineering</h3>
+          <p>Invertis University</p>
+          <span class="tag tag-live">1st year, ongoing</span>
+        </li>
+        <li>
+          <h3>Class XII</h3>
+          <p class="score">86%</p>
+        </li>
+        <li>
+          <h3>Class X</h3>
+          <p class="score">92.4%</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" id="skills">
+      <h2>Technical skills</h2>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Programming language</h3>
+          <ul class="chips"><li>Java</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Web technologies</h3>
+          <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="profiles">
+      <h2>Find me online</h2>
+      <ul class="links">
+        <li><a href="https://github.com/Sandesh-Pro07" target="_blank" rel="noopener"><strong>GitHub</strong><span>Sandesh-Pro07</span></a></li>
+        <li><a href="https://leetcode.com/u/SANDESH_m007/" target="_blank" rel="noopener"><strong>LeetCode</strong><span>SANDESH_m007</span></a></li>
+        <li><a href="https://www.linkedin.com/in/sandesh-pal-069222386/" target="_blank" rel="noopener"><strong>LinkedIn</strong><span>sandesh-pal-069222386</span></a></li>
+        <li><a href="https://www.instagram.com/sandesh.m007/" target="_blank" rel="noopener"><strong>Instagram</strong><span>sandesh.m007</span></a></li>
+      </ul>
+    </section>
+
+    <section class="section contact" id="contact">
+      <h2>Let’s work together</h2>
+      <p class="lead">Have an internship, project or idea in mind? Send me an email and I’ll reply as soon as I can.</p>
+      <a class="btn btn-primary big" href="mailto:sandeshpal938@gmail.com" id="mailBtn">sandeshpal938@gmail.com</a>
+      <button class="btn btn-ghost" type="button" id="copyBtn">Copy email</button>
+      <p class="loc">Bareilly, Uttar Pradesh</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Sandesh Pal</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
